@@ -22,5 +22,16 @@ public class FuvarProgram {
             DB++;
         }
         System.out.println("3.feladat: " + DB);
+        
+        // 4. feladat
+        int fuvarDb = 0;
+        double bevetele = 0;
+        for (Fuvar fuvar : fuvarok) {
+            if (fuvar.getTaxiId() == 6185) {
+                fuvarDb++;
+                bevetele += fuvar.getViteldij() + fuvar.getBorravalo();
+            }
+        }
+        System.out.println("4.feladat: " + fuvarDb + " fuvar alatt: " + bevetele + "$");
     }   
 }

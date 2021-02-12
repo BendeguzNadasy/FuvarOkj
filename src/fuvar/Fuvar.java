@@ -19,6 +19,41 @@ public class Fuvar {
         this.borravalo = Double.parseDouble(s[5]);
         this.fizMod = s[6];
     }
+
+    public int getTaxiId() {
+        return taxiId;
+    }
+
+    public String getIndulas() {
+        return indulas;
+    }
+
+    public int getIdotartam() {
+        return idotartam;
+    }
+
+    public double getTav() {
+        return tav;
+    }
+
+    public double getViteldij() {
+        return viteldij;
+    }
+
+    public double getBorravalo() {
+        return borravalo;
+    }
+
+    public String getFizMod() {
+        return fizMod;
+    }
+
+    @Override
+    public String toString() {
+        return "Fuvar{" + "taxiId=" + taxiId + ", indulas=" + indulas + ", idotartam=" + idotartam + ", tav=" + tav + ", viteldij=" + viteldij + ", borravalo=" + borravalo + ", fizMod=" + fizMod + '}';
+    }
+    
+    
     
     
 }
