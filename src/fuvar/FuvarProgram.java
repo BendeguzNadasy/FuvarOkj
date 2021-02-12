@@ -73,10 +73,11 @@ public class FuvarProgram {
         }
         
         System.out.println("7 feladat: Leghosszabb fuvar:");
-        System.out.println("\tFuvar hossza: " + fuvarok.get(kerIndex).getIdotartam() + " másodperc");
-        System.out.println("\tTaxi azonosító: " + fuvarok.get(kerIndex).getTaxiId());
-        System.out.println("\tMegtett távolság: " + fuvarok.get(kerIndex).getTav() + " mérföld");
-        System.out.println("\tViteldíj: " + fuvarok.get(kerIndex).getViteldij() + "$");
+        System.out.println(fuvarok.get(kerIndex).toString());
+//        System.out.println("\tFuvar hossza: " + fuvarok.get(kerIndex).getIdotartam() + " másodperc");
+//        System.out.println("\tTaxi azonosító: " + fuvarok.get(kerIndex).getTaxiId());
+//        System.out.println("\tMegtett távolság: " + fuvarok.get(kerIndex).getTav() + " mérföld");
+//        System.out.println("\tViteldíj: " + fuvarok.get(kerIndex).getViteldij() + "$");
         
     }   
 }

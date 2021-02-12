@@ -50,7 +50,11 @@ public class Fuvar {
 
     @Override
     public String toString() {
-        return "Fuvar{" + "taxiId=" + taxiId + ", indulas=" + indulas + ", idotartam=" + idotartam + ", tav=" + tav + ", viteldij=" + viteldij + ", borravalo=" + borravalo + ", fizMod=" + fizMod + '}';
+        String adatok = "\tFuvar hossza: " + idotartam + " másodperc\n" +
+        "\tTaxi azonosító: " + taxiId + "\n" + 
+        "\tMegtett távolság: " + tav + " mérföld\n" +
+        "\tViteldíj: " + viteldij + "$" ;
+        return adatok;
     }
     
     
