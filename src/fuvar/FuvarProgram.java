@@ -54,5 +54,12 @@ public class FuvarProgram {
             Integer value = entry.getValue();
             System.out.println("\t" + key + ": " + value);
         }
+        
+        // 6.feladat
+        double osszKm = 0;
+        for (Fuvar fuvar : fuvarok) {
+            osszKm += (fuvar.getTav() * 1.6);
+        }
+        System.out.printf("6. feladat: %.2f\n", osszKm);
     }   
 }
