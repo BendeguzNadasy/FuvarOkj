@@ -61,5 +61,22 @@ public class FuvarProgram {
             osszKm += (fuvar.getTav() * 1.6);
         }
         System.out.printf("6. feladat: %.2f\n", osszKm);
+        
+        // 7.feladat
+        int kerIndex = 0;
+        double maxFuvar = 0;
+        for (int i = 0; i < fuvarok.size(); i++) {
+            if (fuvarok.get(i).getIdotartam() > maxFuvar) {
+                kerIndex = i;
+                maxFuvar = fuvarok.get(i).getIdotartam();
+            }
+        }
+        
+        System.out.println("7 feladat: Leghosszabb fuvar:");
+        System.out.println("\tFuvar hossza: " + fuvarok.get(kerIndex).getIdotartam() + " másodperc");
+        System.out.println("\tTaxi azonosító: " + fuvarok.get(kerIndex).getTaxiId());
+        System.out.println("\tMegtett távolság: " + fuvarok.get(kerIndex).getTav() + " mérföld");
+        System.out.println("\tViteldíj: " + fuvarok.get(kerIndex).getViteldij() + "$");
+        
     }   
 }
